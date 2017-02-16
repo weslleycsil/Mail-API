@@ -5,10 +5,10 @@ Essa API tem o objetivo de sanar facilmente um problema de envio de email atrav�
 
 * [Como Funciona?](#como-funciona)
 * [Requisitos](#requisitos)
-* [Instalação](#instalacao)
+* [Instala&ccedil;&atilde;o](#instala&ccedil;&atilde;o)
 * [Ionic v1](#ionic-v1)
 * [Ionic v2](#ionic-v2)
-* [Créditos](#creditos)
+* [Crditos](#crditos)
 
 <!-- links -->
 
