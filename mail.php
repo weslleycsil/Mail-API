@@ -9,12 +9,14 @@ echo json_encode(array(
     "email"=>$data->email,
     "assunto"=>$data->assunto,
     "mensagem"=>$data->mensagem,
-    "destinatario"=>$data->destinatario
+    "destinatario"=>$data->destinatario,
+    "envio"=>$data->envio
     ));
 
-enviaEmail($data->nome,$data->assunto,$data->mensagem,$data->destinatario,$data->destinatario);
+if($data->envio == true){
+    enviaEmail($data->nome,$data->assunto,$data->mensagem,$data->destinatario,$data->destinatario);
+}
 //responder a,assunto,mensagem,email de quem deve receber, email de envio
-
 
 
 function enviaEmail($de, $assunto, $mensagem, $para, $email_servidor) {
