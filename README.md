@@ -81,7 +81,10 @@ myApp.controller('MainCtrl', function ($scope,$http) {
             'nome': $scope.user.nome,
             'email': $scope.user.email,
             'mensagem': $scope.user.email,
-            
+            'assunto': "Envio de Msg pelo App",
+            'destinatario': "destinatario@dominio.com",
+            'envio': true
+            
           },
           headers: {
             'Accept': 'application/json',
