@@ -5,10 +5,10 @@ Essa API tem o objetivo de sanar facilmente um problema de envio de email atrav�
 
 * [Como Funciona?](#como-funciona)
 * [Requisitos](#requisitos)
-* [Instala&ccedil;&atilde;o](#instala&ccedil;&atilde;o)
+* [Instalação](#instala&ccedil;&atilde;o)
 * [Ionic v1](#ionic-v1)
 * [Ionic v2](#ionic-v2)
-* [Crditos](#crditos)
+* [Créditos](#cr&eacute;ditos)
 
 <!-- links -->
 
@@ -54,7 +54,7 @@ Após o script ter recebido um json com essa estrutura, ele utiliza a função m
 
 Ter um servidor onde possa ser hospedado esse script em PHP, e uma aplicação onde possa ser feita uma requisição HTTP para o endereço do script.
 
-##Instalação
+##Instala&ccedil;&atilde;o
 
 Enviar via FTP ou de outra maneira para o servidor o script em PHP
 
@@ -66,7 +66,7 @@ Exemplo de utilização em uma aplicação feita em Ionic v.1
 
 Exemplo de utilização em uma aplicação feita em Ionic v.2
 
-##Créditos
+##Cr&eacute;ditos
 
 Essa API foi feita com o intuito de ajudar alguns amigos com dificuldade de enviar emails através de uma aplicação mobile. Com esse intuito, ela foi desenvolvida de uma forma simples e também baseada em conceitos de um post no site: [GuiFerreiraCode.com](http://guiferreiracode.com/2015/01/formulario-de-contato-com-angular-js.html).
 
