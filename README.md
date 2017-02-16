@@ -62,10 +62,56 @@ Enviar via FTP ou de outra maneira para o servidor o script em PHP
 
 Exemplo de utilização em uma aplicação feita em Ionic v.1
 
+```javascript
+var myApp = angular.module('myApp', []);
+
+myApp.controller('MainCtrl', function ($scope,$http) {
+    $scope.salveSubmit = function(){
+        /*alert(
+                $scope.user.nome + '\n' +
+                $scope.user.email + '\n' +
+                $scope.user.mensagem + '\n'
+
+        );*/
+
+        $http({
+          url: 'mail.php',
+          method: 'POST',
+          data: {
+            'nome': $scope.user.nome,
+            'email': $scope.user.email,
+            'mensagem': $scope.user.email,
+            
+          },
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            
+          }
+          
+        }).
+        success(function (data) {
+            $scope.success = true;
+            //exemplo de retorno: alert(data['email']);
+            $scope.user = {};
+        }).
+        error(function (data) {
+            $scope.error = true;
+            
+        }); 
+        
+    }
+    
+
+});
+```
+
 ##Ionic v2
 
 Exemplo de utilização em uma aplicação feita em Ionic v.2
 
+```javascript
+```
 ##Cr&eacute;ditos
 
 Essa API foi feita com o intuito de ajudar alguns amigos com dificuldade de enviar emails através de uma aplicação mobile. Com esse intuito, ela foi desenvolvida de uma forma simples e também baseada em conceitos de um post no site: [GuiFerreiraCode.com](http://guiferreiracode.com/2015/01/formulario-de-contato-com-angular-js.html).
