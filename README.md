@@ -114,6 +114,39 @@ myApp.controller('MainCtrl', function ($scope,$http) {
 Exemplo de utilização em uma aplicação feita em Ionic v.2
 
 ```javascript
+import { Injectable } from '@angular/core';
+import { Http, Response} from '@angular/http';
+@Injectable()
+export class MailAPI {
+constructor(public http: Http) {
+    this.http = http;
+
+  }
+  mail(){
+    this.enviar({
+  "nome": "",
+  "email": "",
+  "assunto": "",
+  "mensagem": "",
+  "destinatario": "",
+  "envio": true
+    });
+        
+
+  }
+  enviar(obj: Object) {
+
+        let body = JSON.stringify(obj);
+        this.http.post('mail.php', body)
+        .subscribe(body => {
+          console.log(body);
+        }, error =>{
+          console.log(error);
+        });
+        
+    }
+
+}
 ```
 ##Cr&eacute;ditos
 
